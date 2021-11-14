@@ -15,14 +15,26 @@ urun fiyati hesaplarken once kar sonra otv ve kdv sirayla alis fiyatina eklenmel
 
 hazırlayan @aucan
 
-Öğrenci Ad Soyad=
-Öğrenci No=
-Bölüm=
-Sınıf=
+Öğrenci Ad Soyad=Ebubekir Gelve 
+Öğrenci No=2018507034
+Bölüm=YBS
+Sınıf=4
 '''
 
 class urunler:
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+    urun_adi= ""
+    urun_alis_fiyati= 0
+    urun_otv_orani= 0
+    urun_kdv_orani=0
+    
+    def __init__(self,qurun_adi, qurun_alis_fiyati, qurun_otv_orani, qurun_kdv_orani)
+      self.urun_adi=qurun_adi
+      self.urun_alis_fiyati=qurun_alis_fiyati
+      self.urun_otv_orani=qurun_otv_orani
+      self.urun_kdv_orani= qurun_kdv_orani
+    
+    def urun_satis_fiyati(self,kar_orani):
+        
    
         
     
