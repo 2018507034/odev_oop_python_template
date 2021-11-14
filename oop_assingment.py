@@ -27,11 +27,11 @@ class urunler:
     urun_otv_orani= 0
     urun_kdv_orani=0
     
-    def __init__(self,qurun_adi, qurun_alis_fiyati, qurun_otv_orani, qurun_kdv_orani)
-      self.urun_adi=qurun_adi
-      self.urun_alis_fiyati=qurun_alis_fiyati
-      self.urun_otv_orani=qurun_otv_orani
-      self.urun_kdv_orani= qurun_kdv_orani
+    def __init__(self,pkurun_adi, pkurun_alis_fiyati, pkurun_otv_orani, pkurun_kdv_orani)
+      self.urun_adi=pkurun_adi
+      self.urun_alis_fiyati=pkurun_alis_fiyati
+      self.urun_otv_orani=pkurun_otv_orani
+      self.urun_kdv_orani= pkurun_kdv_orani
     
     def urun_satis_fiyati(self,kar_orani):
       
