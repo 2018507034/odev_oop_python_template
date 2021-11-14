@@ -22,7 +22,7 @@ Sınıf=
 '''
 
 class urunler:
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+    #kodunuzu bu yorum satırını silerek buraya yazınıhbhkgbjhvbjhvjhvjhvvz, diğer kısımları değiştirmeyiniz.
    
         
     
