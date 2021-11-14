@@ -23,9 +23,10 @@ Sınıf=4
 
 class urunler:
     urun_adi= ""
-    urun_alis_fiyati= 0
-    urun_otv_orani= 0
-    urun_kdv_orani=0
+    urun_alis_fiyati=50
+    urun_otv_orani= 0.1
+    urun_kdv_orani=0.23
+    kar_orani=0.5
     
     def __init__(self,pkurun_adi, pkurun_alis_fiyati, pkurun_otv_orani, pkurun_kdv_orani)
       self.urun_adi=pkurun_adi
@@ -35,10 +36,11 @@ class urunler:
     
     def urun_satis_fiyati(self,kar_orani):
       
-      urunFiyati = float(input(“ürünün fiyatını giriniz: “))
-      urun_kdv_orani = float(input(“kdv oranını giriniz  %18 = 0.18): “))
-      kdvSonuc = urun_alis_fiyati * urun_kdv_orani
-      print(“Ürünün KDV’si: “+ str(kdvSonuc))
+        urun_satis_fiyati = urun_alis_orani + (urun_alis_fiyati*kar_orani) 50+ (50*0.5) = 75
+        urun_satis_fiyati = urun_satis_fiyati + (urun_satis_fiyati * urun_otv_orani) 75 + (75*0.1) = 82,5
+        urun_satis_fiyati = urun_satis_fiyati + (urun_satis_fiyati * urun_kdv_orani)  82,5 + (82,5*0.23) = 101,475
+        
+        
 
    
         
@@ -58,7 +60,7 @@ def sepet_fiyati(kar_orani):
     yumurta=urunler('yumurta',5,0.30,0.19)
     toplam=0   
     #-------**-----------
-   
+   toplam=ekmek.urun_satis_fiyati(kar_orani)+patates.urun_satis_fiyati(kar_orani)+elma.urun_satis_fiyati(kar_orani)+un.urun_satis_fiyati(kar_orani)+yumurta.urun_satis_fiyati(kar_orani)
     #-------**-----------
     return toplam
 
