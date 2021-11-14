@@ -22,10 +22,24 @@ Sınıf=4
 '''
 
 class urunler:
-  def__init__(self,ekmek,patates,elma,un,yumurta):
-    self.sınıf_adi="urunler"
-    self.fiyat=0
-    self.ekmek
+    urun_adi= ""
+    urun_alis_fiyati= 0
+    urun_otv_orani= 0
+    urun_kdv_orani=0
+    
+    def __init__(self,qurun_adi, qurun_alis_fiyati, qurun_otv_orani, qurun_kdv_orani)
+      self.urun_adi=qurun_adi
+      self.urun_alis_fiyati=qurun_alis_fiyati
+      self.urun_otv_orani=qurun_otv_orani
+      self.urun_kdv_orani= qurun_kdv_orani
+    
+    def urun_satis_fiyati(self,kar_orani):
+      
+      urunFiyati = float(input(“ürünün fiyatını giriniz: “))
+      urun_kdv_orani = float(input(“kdv oranını giriniz  %18 = 0.18): “))
+      kdvSonuc = urun_alis_fiyati * urun_kdv_orani
+      print(“Ürünün KDV’si: “+ str(kdvSonuc))
+
    
         
     
