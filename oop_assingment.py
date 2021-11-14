@@ -25,6 +25,7 @@ class urunler:
   def__init__(self,ekmek,patates,elma,un,yumurta):
     self.sınıf_adi="urunler"
     self.fiyat=0
+    self.ekmek
    
         
     
