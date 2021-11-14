@@ -43,12 +43,7 @@ def sepet_fiyati(kar_orani):
     yumurta=urunler('yumurta',5,0.30,0.19)
     toplam=0   
     #-------**-----------
-    while toplam 
-    {
-    urunler = (ekmek,patates,elma,un,yumurta,)
-        for  fiyat in urunler:
-        print(fiyat)
-    }
+   
     #-------**-----------
     return toplam
 
