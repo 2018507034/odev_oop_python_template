@@ -21,28 +21,23 @@ Bölüm=YBS
 Sınıf=4
 '''
 
-class urunler:
-    urun_adi= ""
-    urun_alis_fiyati=50
-    urun_otv_orani= 0.1
-    urun_kdv_orani=0.23
-    kar_orani=0.5
+    class urunler:
+     urun_adi= ""
+     urun_alis_fiyati=0
+     urun_otv_orani=0
+     urun_kdv_orani=0
     
-    def __init__(self,pkurun_adi, pkurun_alis_fiyati, pkurun_otv_orani, pkurun_kdv_orani)
-      self.urun_adi=pkurun_adi
-      self.urun_alis_fiyati=pkurun_alis_fiyati
-      self.urun_otv_orani=pkurun_otv_orani
-      self.urun_kdv_orani= pkurun_kdv_orani
-    
-    def urun_satis_fiyati(self,kar_orani):
-      
-        urun_satis_fiyati = urun_alis_orani + (urun_alis_fiyati*kar_orani) 50+ (50*0.5) = 75
-        urun_satis_fiyati = urun_satis_fiyati + (urun_satis_fiyati * urun_otv_orani) 75 + (75*0.1) = 82,5
-        urun_satis_fiyati = urun_satis_fiyati + (urun_satis_fiyati * urun_kdv_orani)  82,5 + (82,5*0.23) = 101,475
+     def _init_(self,aurun_adi, aurun_alis_fiyati, aurun_otv_orani, aurun_kdv_orani):
+          self.urun_adi=aurun_adi
+          self.urun_alis_fiyati=aurun_alis_fiyati
+          self.urun_otv_orani=aurun_otv_orani
+          self.urun_kdv_orani=aurun_kdv_orani
         
-        
-
-   
+     def urun_satis_fiyati(self,kar_orani):
+          self.urun_alis_fiyati= self.urun_alis_fiyati + (self.urun_alis_fiyati*kar_orani)
+          self.urun_alis_fiyati= self.urun_alis_fiyati + (self.urun_alis_fiyati*self.urun_otv_orani) 
+          self.urun_alis_fiyati= self.urun_alis_fiyati + (self.urun_alis_fiyati*self.urun_kdv_orani)
+          return self.urun_alis_fiyati
         
     
 def sepet_fiyati(kar_orani):
