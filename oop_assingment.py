@@ -27,7 +27,7 @@ Sınıf=4
      urun_otv_orani=0
      urun_kdv_orani=0
     
-     def _init_(self,aurun_adi, aurun_alis_fiyati, aurun_otv_orani, aurun_kdv_orani):
+     def __init__(self,aurun_adi, aurun_alis_fiyati, aurun_otv_orani, aurun_kdv_orani):
           self.urun_adi=aurun_adi
           self.urun_alis_fiyati=aurun_alis_fiyati
           self.urun_otv_orani=aurun_otv_orani
